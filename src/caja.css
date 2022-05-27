@@ -1,0 +1,41 @@
+.caja__posters {
+
+   display: flex;  
+   overflow-y: hidden;
+   overflow-x: scroll;
+   padding: 20px;
+}
+
+.caja__posters::-webkit-scrollbar{
+
+   display:none;
+}
+
+/*las acomoda de forma horizonal*/
+
+.caja__poster { 
+
+max-height: 100px;
+object-fit: contain;
+width: 100%;
+margin-right: 10px;
+transition: transform 450ms;
+}
+
+.caja__poster:hover{
+
+   transform: scale(1.08);
+   opacity: 1;
+}
+
+.caja__posterType{
+
+   max-height: 250px;
+}
+
+.caja__posterType:hover{
+
+transform:scale(1.09);
+
+}
+/*ajusta las imagenes, al div, las estira de abajo arriba en una columna y ancho del 100%*/
